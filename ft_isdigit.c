@@ -6,16 +6,17 @@
 /*   By: sishizaw <sishizaw@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/16 15:06:21 by sishizaw          #+#    #+#             */
-/*   Updated: 2024/04/23 08:25:33 by sishizaw         ###   ########.fr       */
+/*   Updated: 2024/05/01 17:07:55 by sishizaw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
 int	ft_isdigit(int c)
 {
 	return (('0' <= c && c <= '9'));
 }
+// #include <stdio.h>
 
 // int	main(void)
 // {

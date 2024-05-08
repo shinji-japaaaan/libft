@@ -6,33 +6,25 @@
 /*   By: sishizaw <sishizaw@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/18 10:44:59 by sishizaw          #+#    #+#             */
-/*   Updated: 2024/04/26 12:37:14 by sishizaw         ###   ########.fr       */
+/*   Updated: 2024/05/06 13:51:18 by sishizaw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stdlib.h>
+#include "libft.h"
 
 void	*ft_calloc(size_t n, size_t size)
 {
-	void	*ptr;
-	char	*ptr2;
-	size_t	i;
+	char	*ptr;
 
-	if (n > 0 && size > 0 && SIZE_MAX / size < n)
+	if (size > 0 && SIZE_MAX / size < n)
 		return (NULL);
-	ptr = malloc(n * size);
+	ptr = (char *)malloc(n * size);
 	if (ptr == NULL)
 		return (NULL);
-	ptr2 = (char *)ptr;
-	i = 0;
-	while (i < n * size)
-	{
-		ptr2[i] = 0;
-		i++;
-	}
+	ft_bzero(ptr, n * size);
 	return (ptr);
 }
+// #include <stdio.h>
 
 // int	main()
 // {

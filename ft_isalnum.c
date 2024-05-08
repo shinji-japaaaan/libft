@@ -6,11 +6,11 @@
 /*   By: sishizaw <sishizaw@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/16 15:06:21 by sishizaw          #+#    #+#             */
-/*   Updated: 2024/04/28 11:16:23 by sishizaw         ###   ########.fr       */
+/*   Updated: 2024/05/08 11:24:44 by sishizaw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
 int	ft_isalnum(int c)
 {
@@ -19,18 +19,20 @@ int	ft_isalnum(int c)
 		|| ('A' <= c && c <= 'Z'));
 }
 
-// int	main(void)
-// {
-// 	char	c;
+#include <stdio.h>
 
-// 	c = '5';
-// 	if (ft_isalnum(c))
-// 	{
-// 		printf("%c is an alphanumeric character.\n", c);
-// 	}
-// 	else
-// 	{
-// 		printf("%c is not an alphanumeric character.\n", c);
-// 	}
-// 	return (0);
-// }
+int	main(void)
+{
+	char	c;
+
+	c = 0;
+	if (ft_isalnum(c))
+	{
+		printf("%c is an alphanumeric character.\n", c);
+	}
+	else
+	{
+		printf("%c is not an alphanumeric character.\n", c);
+	}
+	return (0);
+}

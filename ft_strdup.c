@@ -6,12 +6,11 @@
 /*   By: sishizaw <sishizaw@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/18 12:01:27 by sishizaw          #+#    #+#             */
-/*   Updated: 2024/04/26 12:41:04 by sishizaw         ###   ########.fr       */
+/*   Updated: 2024/05/01 17:09:28 by sishizaw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stdlib.h>
+#include "libft.h"
 
 char	*ft_strdup(const char *src)
 {
@@ -35,6 +34,7 @@ char	*ft_strdup(const char *src)
 	*ptr = '\0';
 	return (dest);
 }
+// #include <stdio.h>
 
 // #include <string.h>
 

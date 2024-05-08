@@ -6,12 +6,11 @@
 /*   By: sishizaw <sishizaw@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/27 07:54:46 by sishizaw          #+#    #+#             */
-/*   Updated: 2024/04/28 14:40:04 by sishizaw         ###   ########.fr       */
+/*   Updated: 2024/05/01 17:08:30 by sishizaw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
 t_list	*ft_lstnew(void *content)
 {

@@ -6,11 +6,10 @@
 /*   By: sishizaw <sishizaw@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/17 13:14:15 by sishizaw          #+#    #+#             */
-/*   Updated: 2024/04/30 10:59:57 by sishizaw         ###   ########.fr       */
+/*   Updated: 2024/05/06 13:50:48 by sishizaw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
 #include "libft.h"
 
 size_t	ft_strlcat(char *dest, const char *src, size_t size)
@@ -34,6 +33,7 @@ size_t	ft_strlcat(char *dest, const char *src, size_t size)
 	dest[dlen + i] = '\0';
 	return (slen + dlen);
 }
+// #include <stdio.h>
 
 // #include <string.h>
 // int	main(void)

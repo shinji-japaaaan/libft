@@ -6,14 +6,13 @@
 /*   By: sishizaw <sishizaw@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/19 11:39:54 by sishizaw          #+#    #+#             */
-/*   Updated: 2024/04/30 09:55:46 by sishizaw         ###   ########.fr       */
+/*   Updated: 2024/05/04 08:00:37 by sishizaw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stdlib.h>
+#include "libft.h"
 
-int	count_words(const char *s, char c)
+static int	count_words(const char *s, char c)
 {
 	int	count;
 	int	is_word;
@@ -39,7 +38,7 @@ int	count_words(const char *s, char c)
 	return (count);
 }
 
-int	copy_word2(char	**result, const char *s, int index, int word_length)
+static int	copy_word2(char	**result, const char *s, int index, int word_length)
 {
 	int	i;
 
@@ -53,10 +52,10 @@ int	copy_word2(char	**result, const char *s, int index, int word_length)
 		i++;
 	}
 	result[index][word_length] = '\0';
-	return (1);
+	return (0);
 }
 
-void	copy_word1(char **result, char const *s, char c)
+static int	copy_word1(char **result, char const *s, char c)
 {
 	int	index;
 	int	word_length;
@@ -80,6 +79,7 @@ void	copy_word1(char **result, char const *s, char c)
 		index++;
 	}
 	result[index] = NULL;
+	return (0);
 }
 
 char	**ft_split(char const *s, char c)
@@ -98,6 +98,7 @@ char	**ft_split(char const *s, char c)
 	copy_word1(result, s, c);
 	return (result);
 }
+// #include <stdio.h>
 
 // int	main()
 // {

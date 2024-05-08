@@ -6,13 +6,11 @@
 /*   By: sishizaw <sishizaw@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/27 11:20:46 by sishizaw          #+#    #+#             */
-/*   Updated: 2024/04/30 10:24:17 by sishizaw         ###   ########.fr       */
+/*   Updated: 2024/05/01 17:08:18 by sishizaw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
-#include <stdio.h>
 
 void	ft_lstdelone(t_list *lst, void (*del)(void *))
 {
@@ -23,10 +21,12 @@ void	ft_lstdelone(t_list *lst, void (*del)(void *))
 	free(lst);
 }
 
-void	del(void *content)
-{
-	free(content);
-}
+// #include <stdio.h>
+
+// void	del(void *content)
+// {
+// 	free(content);
+// }
 
 // int	main()
 // {

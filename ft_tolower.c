@@ -6,23 +6,19 @@
 /*   By: sishizaw <sishizaw@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/17 13:53:51 by sishizaw          #+#    #+#             */
-/*   Updated: 2024/04/23 13:13:15 by sishizaw         ###   ########.fr       */
+/*   Updated: 2024/05/01 17:10:13 by sishizaw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
 int	ft_tolower(int c)
 {
 	if ('A' <= c && c <= 'Z')
-	{
-		return (c + 32);
-	}
-	else
-	{
-		return (c);
-	}
+		c = c - 'A' + 'a';
+	return (c);
 }
+// #include <stdio.h>
 
 // #include <ctype.h>
 

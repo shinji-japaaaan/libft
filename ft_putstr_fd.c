@@ -6,12 +6,12 @@
 /*   By: sishizaw <sishizaw@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/22 13:47:14 by sishizaw          #+#    #+#             */
-/*   Updated: 2024/04/30 10:06:04 by sishizaw         ###   ########.fr       */
+/*   Updated: 2024/05/06 13:50:43 by sishizaw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
-#include <stdio.h>
+#include "libft.h"
 
 void	ft_putstr_fd(char *s, int fd)
 {
@@ -23,6 +23,7 @@ void	ft_putstr_fd(char *s, int fd)
 		s++;
 	}
 }
+// #include <stdio.h>
 
 // int	main()
 // {

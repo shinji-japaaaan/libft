@@ -6,15 +6,13 @@
 /*   By: sishizaw <sishizaw@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/23 14:24:55 by sishizaw          #+#    #+#             */
-/*   Updated: 2024/04/30 10:32:00 by sishizaw         ###   ########.fr       */
+/*   Updated: 2024/05/04 08:01:34 by sishizaw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stdlib.h>
 #include "libft.h"
 
-char	*cpy(char *dest, char *src)
+static char	*cpy(char *dest, char *src)
 {
 	size_t	i;
 
@@ -36,8 +34,6 @@ char	*ft_strjoin(char const *s1, char const *s2)
 
 	s1_len = 0;
 	s2_len = 0;
-	if (s1 == NULL && s2 == NULL)
-		return (NULL);
 	if (s1 == NULL || s2 == NULL)
 		return (NULL);
 	if (s1 != NULL)
@@ -50,6 +46,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	cpy(cpy(result, (char *)s1), (char *)s2);
 	return (result);
 }
+// #include <stdio.h>
 
 // int main()
 // {

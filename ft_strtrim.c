@@ -6,15 +6,13 @@
 /*   By: sishizaw <sishizaw@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/19 08:50:45 by sishizaw          #+#    #+#             */
-/*   Updated: 2024/04/29 13:57:25 by sishizaw         ###   ########.fr       */
+/*   Updated: 2024/05/04 08:06:15 by sishizaw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
 #include "libft.h"
-#include <stdlib.h>
 
-size_t	trim_end(const char *s1, const char *set, size_t *start)
+static size_t	trim_end(const char *s1, const char *set, size_t *start)
 {
 	size_t	end;
 	int		found;
@@ -41,7 +39,7 @@ size_t	trim_end(const char *s1, const char *set, size_t *start)
 	return (end);
 }
 
-size_t	trim_start(const char *s1, const char *set)
+static size_t	trim_start(const char *s1, const char *set)
 {
 	size_t	start;
 	int		found;
@@ -86,6 +84,8 @@ char	*ft_strtrim(const char *s1, const char *set)
 	trimed_str[len] = '\0';
 	return (trimed_str);
 }
+// #include <stdlib.h>
+// #include <stdio.h>
 
 // int	main()
 // {

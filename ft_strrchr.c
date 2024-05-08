@@ -6,11 +6,10 @@
 /*   By: sishizaw <sishizaw@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/17 14:47:00 by sishizaw          #+#    #+#             */
-/*   Updated: 2024/04/30 10:16:32 by sishizaw         ###   ########.fr       */
+/*   Updated: 2024/05/01 16:59:48 by sishizaw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
 #include "libft.h"
 
 char	*ft_strrchr(const char *str, int c)
@@ -22,13 +21,12 @@ char	*ft_strrchr(const char *str, int c)
 	while (*str != '\0')
 	{
 		if (*str == (unsigned char)c)
-		{
 			last = str;
-		}
 		str++;
 	}
 	return ((char *)last);
 }
+// #include <stdio.h>
 
 // #include <string.h>
 

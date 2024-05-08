@@ -6,11 +6,11 @@
 /*   By: sishizaw <sishizaw@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/16 17:37:38 by sishizaw          #+#    #+#             */
-/*   Updated: 2024/04/28 10:07:42 by sishizaw         ###   ########.fr       */
+/*   Updated: 2024/05/01 17:06:07 by sishizaw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
 void	ft_bzero(void *ptr, size_t n)
 {
@@ -25,6 +25,8 @@ void	ft_bzero(void *ptr, size_t n)
 		i++;
 	}
 }
+
+// #include <stdio.h>
 
 // int	main(void)
 // {

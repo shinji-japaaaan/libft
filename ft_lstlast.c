@@ -6,7 +6,7 @@
 /*   By: sishizaw <sishizaw@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/27 11:08:48 by sishizaw          #+#    #+#             */
-/*   Updated: 2024/04/29 10:48:57 by sishizaw         ###   ########.fr       */
+/*   Updated: 2024/05/06 13:50:33 by sishizaw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,11 @@
 
 t_list	*ft_lstlast(t_list *lst)
 {
-	t_list	*current;
-
 	if (!lst)
 		return (NULL);
-	current = lst;
-	while (current->next != NULL)
-		current = current->next;
-	return (current);
+	while (lst->next != NULL)
+		lst = lst->next;
+	return (lst);
 }
 
 // int main()

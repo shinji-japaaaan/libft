@@ -6,13 +6,11 @@
 /*   By: sishizaw <sishizaw@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/27 11:00:26 by sishizaw          #+#    #+#             */
-/*   Updated: 2024/04/29 08:25:37 by sishizaw         ###   ########.fr       */
+/*   Updated: 2024/05/01 16:54:30 by sishizaw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
-#include <stdio.h>
 
 int	ft_lstsize(t_list *lst)
 {
@@ -28,6 +26,8 @@ int	ft_lstsize(t_list *lst)
 	}
 	return (count);
 }
+// #include <stdlib.h>
+// #include <stdio.h>
 
 // int	main(void)
 // {

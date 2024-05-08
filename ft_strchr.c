@@ -6,26 +6,25 @@
 /*   By: sishizaw <sishizaw@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/17 14:04:49 by sishizaw          #+#    #+#             */
-/*   Updated: 2024/04/30 14:54:31 by sishizaw         ###   ########.fr       */
+/*   Updated: 2024/05/01 17:09:21 by sishizaw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
 char	*ft_strchr(const char *str, int c)
 {
 	while (*str != '\0')
 	{
 		if (*str == (char)c)
-		{
 			return ((char *)str);
-		}
 		str++;
 	}
 	if ((char)c == '\0')
 		return ((char *)str);
 	return (NULL);
 }
+// #include <stdio.h>
 
 // #include <string.h>
 

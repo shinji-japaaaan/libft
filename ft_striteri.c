@@ -6,19 +6,11 @@
 /*   By: sishizaw <sishizaw@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/22 12:19:35 by sishizaw          #+#    #+#             */
-/*   Updated: 2024/04/25 10:10:53 by sishizaw         ###   ########.fr       */
+/*   Updated: 2024/05/01 17:09:32 by sishizaw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stdlib.h>
-
-void	ft_uppercase(unsigned int i, char *c)
-{
-	(void)i;
-	if ('a' <= *c && *c <= 'z')
-		*c = *c - 32;
-}
+#include "libft.h"
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
@@ -34,6 +26,14 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 		index++;
 	}
 }
+// #include <stdio.h>
+
+// void	ft_uppercase(unsigned int i, char *c)
+// {
+// 	(void)i;
+// 	if ('a' <= *c && *c <= 'z')
+// 		*c = *c - 32;
+// }
 
 // int	main()
 // {

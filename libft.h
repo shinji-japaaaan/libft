@@ -6,7 +6,7 @@
 /*   By: sishizaw <sishizaw@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/22 15:25:44 by sishizaw          #+#    #+#             */
-/*   Updated: 2024/04/29 10:43:14 by sishizaw         ###   ########.fr       */
+/*   Updated: 2024/05/01 17:07:24 by sishizaw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 # include <stddef.h>
 # include <stdio.h>
 # include <limits.h>
+# include <stdlib.h>
 
 typedef struct s_list
 {

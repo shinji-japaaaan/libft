@@ -6,14 +6,13 @@
 /*   By: sishizaw <sishizaw@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/17 17:14:17 by sishizaw          #+#    #+#             */
-/*   Updated: 2024/04/30 15:24:49 by sishizaw         ###   ########.fr       */
+/*   Updated: 2024/05/06 13:50:59 by sishizaw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
 #include "libft.h"
 
-char	*ft_search(const char *str1, const char *str2, size_t n)
+static char	*ft_search(const char *str1, const char *str2, size_t n)
 {
 	const char	*s1;
 	const char	*s2;
@@ -29,9 +28,7 @@ char	*ft_search(const char *str1, const char *str2, size_t n)
 		n--;
 	}
 	if (*s2 == '\0')
-	{
 		return ((char *)str1);
-	}
 	return (NULL);
 }
 
@@ -45,9 +42,7 @@ char	*ft_strnstr(const char *str1, const char *str2, size_t n)
 	{
 		if (*str1 == *str2)
 		{
-			if (ft_strlen(str1) < ft_strlen(str2))
-				return (NULL);
-			if (ft_search(str1, str2, n) != NULL)
+			if (ft_search(str1, str2, n))
 				return (ft_search(str1, str2, n));
 		}
 		str1++;
@@ -55,6 +50,7 @@ char	*ft_strnstr(const char *str1, const char *str2, size_t n)
 	}
 	return (NULL);
 }
+// #include <stdio.h>
 
 // #include <string.h>
 

@@ -6,14 +6,13 @@
 /*   By: sishizaw <sishizaw@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/20 13:11:31 by sishizaw          #+#    #+#             */
-/*   Updated: 2024/04/28 10:32:30 by sishizaw         ###   ########.fr       */
+/*   Updated: 2024/05/04 07:54:51 by sishizaw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stdlib.h>
+#include "libft.h"
 
-char	*ft_num_0(void)
+static char	*ft_num_0(void)
 {
 	char	*str;
 
@@ -25,7 +24,7 @@ char	*ft_num_0(void)
 	return (str);
 }
 
-char	*ft_itoa_convert(int num_digits, long long num)
+static char	*ft_itoa_convert(int num_digits, long long num)
 {
 	char	*str;
 
@@ -67,6 +66,7 @@ char	*ft_itoa(int num)
 		return (ft_itoa_convert(11, (long long)num));
 	return (ft_itoa_convert(num_digits, (long long)num));
 }
+// #include <stdio.h>
 
 // int	main()
 // {

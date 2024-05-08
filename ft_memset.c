@@ -6,11 +6,11 @@
 /*   By: sishizaw <sishizaw@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/16 17:10:16 by sishizaw          #+#    #+#             */
-/*   Updated: 2024/04/28 10:33:02 by sishizaw         ###   ########.fr       */
+/*   Updated: 2024/05/01 17:06:38 by sishizaw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
 void	*ft_memset(void *ptr, int value, size_t number)
 {
@@ -26,6 +26,7 @@ void	*ft_memset(void *ptr, int value, size_t number)
 	}
 	return (ptr);
 }
+// #include <stdio.h>
 
 // int	main(void)
 // {

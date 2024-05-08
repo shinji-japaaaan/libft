@@ -6,11 +6,10 @@
 /*   By: sishizaw <sishizaw@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/17 12:17:45 by sishizaw          #+#    #+#             */
-/*   Updated: 2024/04/30 10:17:16 by sishizaw         ###   ########.fr       */
+/*   Updated: 2024/05/06 13:50:54 by sishizaw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
 #include "libft.h"
 
 size_t	ft_strlcpy(char *dest, const char *src, size_t size)
@@ -27,11 +26,10 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 	}
 	dest[i] = '\0';
 	while (src[i] != '\0')
-	{
 		i++;
-	}
 	return (i);
 }
+// #include <stdio.h>
 
 // int	main(void)
 // {

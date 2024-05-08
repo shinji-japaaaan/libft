@@ -6,13 +6,11 @@
 /*   By: sishizaw <sishizaw@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/27 11:35:28 by sishizaw          #+#    #+#             */
-/*   Updated: 2024/04/30 15:27:11 by sishizaw         ###   ########.fr       */
+/*   Updated: 2024/05/01 16:54:08 by sishizaw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
-#include <stdio.h>
 
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
@@ -39,19 +37,21 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	}
 	return (new_lst);
 }
+// #include <stdio.h>
+// #include <stdlib.h>
 
-void	*double_content(void *content)
-{
-	int	*num;
-	int	*result;
+// void	*double_content(void *content)
+// {
+// 	int	*num;
+// 	int	*result;
 
-	num = (int *)content;
-	result = (int *)malloc (sizeof(int));
-	if (result == NULL)
-		return (NULL);
-	*result = (*num) * 2;
-	return (result);
-}
+// 	num = (int *)content;
+// 	result = (int *)malloc (sizeof(int));
+// 	if (result == NULL)
+// 		return (NULL);
+// 	*result = (*num) * 2;
+// 	return (result);
+// }
 
 // int	main()
 // {

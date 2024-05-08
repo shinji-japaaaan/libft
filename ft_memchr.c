@@ -6,11 +6,11 @@
 /*   By: sishizaw <sishizaw@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/17 15:45:21 by sishizaw          #+#    #+#             */
-/*   Updated: 2024/04/23 16:32:29 by sishizaw         ###   ########.fr       */
+/*   Updated: 2024/05/01 17:08:36 by sishizaw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
 void	*ft_memchr(const void *str, int c, size_t n)
 {
@@ -19,15 +19,13 @@ void	*ft_memchr(const void *str, int c, size_t n)
 	while (0 < n)
 	{
 		if (*p == (unsigned char)c)
-		{
 			return ((void *)p);
-		}
 		p++;
 		n--;
 	}
 	return (NULL);
 }
-
+// #include <stdio.h>
 // #include <string.h>
 
 // int	main(void)

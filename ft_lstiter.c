@@ -6,13 +6,11 @@
 /*   By: sishizaw <sishizaw@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/27 11:30:58 by sishizaw          #+#    #+#             */
-/*   Updated: 2024/04/29 10:48:29 by sishizaw         ###   ########.fr       */
+/*   Updated: 2024/05/01 16:53:14 by sishizaw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
-#include <stdlib.h>
 
 void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
@@ -27,11 +25,13 @@ void	ft_lstiter(t_list *lst, void (*f)(void *))
 		current = current->next;
 	}
 }
+// #include <stdio.h>
+// #include <stdlib.h>
 
-void	print_content(void *content)
-{
-	printf("%d", *((int *)content));
-}
+// void	print_content(void *content)
+// {
+// 	printf("%d", *((int *)content));
+// }
 
 // int	main()
 // {

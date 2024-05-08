@@ -6,12 +6,11 @@
 /*   By: sishizaw <sishizaw@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/22 10:53:48 by sishizaw          #+#    #+#             */
-/*   Updated: 2024/04/28 10:22:30 by sishizaw         ###   ########.fr       */
+/*   Updated: 2024/05/01 17:09:50 by sishizaw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stdlib.h>
+#include "libft.h"
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
@@ -36,14 +35,15 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	result[len] = '\0';
 	return (result);
 }
+// #include <stdio.h>
 
-char	ft_uppercase1(unsigned int i, char c)
-{
-	(void)i;
-	if ('a' <= c && c <= 'z')
-		return (c - 32);
-	return (c);
-}
+// char	ft_uppercase1(unsigned int i, char c)
+// {
+// 	(void)i;
+// 	if ('a' <= c && c <= 'z')
+// 		return (c - 32);
+// 	return (c);
+// }
 
 // int	main()
 // {
