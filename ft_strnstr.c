@@ -16,12 +16,10 @@ static char	*ft_search(const char *str1, const char *str2, size_t n)
 {
 	const char	*s1;
 	const char	*s2;
-	size_t		i;
 
 	s1 = str1;
 	s2 = str2;
-	i = 0;
-	while (*s1 != '\0' && *s2 != '\0' && *s1 == *s2 && n > i)
+	while (*s1 != '\0' && *s2 != '\0' && *s1 == *s2 && n > 0)
 	{
 		s1++;
 		s2++;
@@ -43,7 +41,7 @@ char	*ft_strnstr(const char *str1, const char *str2, size_t n)
 		if (*str1 == *str2)
 		{
 			if (ft_search(str1, str2, n))
-				return (ft_search(str1, str2, n));
+				return ((char *)str1);
 		}
 		str1++;
 		n--;
