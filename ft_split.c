@@ -68,8 +68,9 @@ static int	copy_word1(char **result, char const *s, char c)
 			word_length++;
 		else if (word_length)
 		{
-			copy_word2(result, s, index++, word_length);
+			copy_word2(result, s, index, word_length);
 			word_length = 0;
+			index++;
 		}
 		s++;
 	}
