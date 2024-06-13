@@ -41,7 +41,7 @@ char	*ft_strnstr(const char *str1, const char *str2, size_t n)
 		if (*str1 == *str2)
 		{
 			if (ft_search(str1, str2, n))
-				return (ft_search(str1, str2, n));
+				return ((char *)str1);
 		}
 		str1++;
 		n--;
