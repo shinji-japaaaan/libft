@@ -12,32 +12,6 @@
 
 #include "libft.h"
 
-static int	count_words(const char *s, char c)
-{
-	int	count;
-	int	is_word;
-
-	if (*s == '\0')
-		return (0);
-	count = 0;
-	is_word = 0;
-	while (*s)
-	{
-		if (*s == c)
-			is_word = 0;
-		else
-		{
-			if (is_word == 0)
-			{
-				count++;
-				is_word = 1;
-			}
-		}
-		s++;
-	}
-	return (count);
-}
-
 static int	copy_word2(char	**result, const char *s, int index, int word_length)
 {
 	int	i;
@@ -81,6 +55,27 @@ static int	copy_word1(char **result, char const *s, char c)
 	}
 	result[index] = NULL;
 	return (0);
+}
+
+static int	count_words(const char *s, char c)
+{
+	int	count;
+	int	is_word;
+
+	count = 0;
+	is_word = 0;
+	while (*s)
+	{
+		if (*s == c)
+			is_word = 0;
+		else if (is_word == 0)
+		{
+			count++;
+			is_word = 1;
+		}
+		s++;
+	}
+	return (count);
 }
 
 char	**ft_split(char const *s, char c)
