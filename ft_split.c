@@ -12,13 +12,26 @@
 
 #include "libft.h"
 
+void	all_free(char **result, int index)
+{
+	int	i;
+
+	i = 0;
+	while (0 <= index)
+	{
+		free(result[index]);
+		index--;
+	}
+	free(result);
+}
+
 static int	copy_word2(char	**result, const char *s, int index, int word_length)
 {
 	int	i;
 
 	result[index] = (char *)malloc(word_length + 1);
 	if (result[index] == NULL)
-		return (0);
+		return (all_free(result, index - 1), 0);
 	i = 0;
 	while (i < word_length)
 	{
